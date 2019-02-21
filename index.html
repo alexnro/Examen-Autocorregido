@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORMULARIO EXÁMEN</title>
+    <link rel="icon" type="image/png" href="*"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css"/>
+</head>
+<body>
+    <div id="header">
+            <img src="images/logo.jpg" alt="logo">
+        <h1>PREGUNTAS GENÉRICAS DE VIDEOJUEGOS</h1>
+    </div>    
+
+    <form action="*.php" method="POST">
+        <div id="participant">
+            <fieldset>
+                <div id="instructions">
+                    <h2>INSTRUCCIONES</h2>
+                    <p>Responde correctamente a las siguientes preguntas, las preguntas de selección múltiple tienen mas de una respuesta correcta.</p>
+                </div>
+                <p>Nombre: <input type="text" name="name"></p>
+                <p>DNI: <input type="text" name="dni"></p>
+            </fieldset>
+        </div>
+        <div id="form">
+                <div id="bannerRight">
+                    <img src="images/banner.jpeg" alt="banner" height="1321">
+                </div>
+                <div id="bannerLeft">
+                    <img src="images/bannerLeft.jpeg" alt="banner" height="1321">
+                </div>
+            <fieldset>
+                <div id="firstQuestion">
+                    <h2>¿En que año se lanzó el primer videojuego?</h2>
+                    <ul>
+                        <li><label><input type="radio" name="firstAnswer" value="1958">1958</label></li>
+                        <li><label><input type="radio" name="secondAnswer" value="1960">1960</label></li>
+                        <li><label><input type="radio" name="thirdAnswer" value="1896">1896</label></li>
+                        <li><label><input type="radio" name="fourthAnswer" value="1931">1931</label></li>
+                    </ul>
+                </div>
+                <div id="secondQuestion">
+                    <h2>¿Cuál fué la primera videoconsola en lanzarse al mercado?</h2>
+                    <ul>
+                        <li><label><input type="radio" name="firstAnswer" value="Atari">Atari</label></li>
+                        <li><label><input type="radio" name="secondAnswer" value="Sears-Telegames-Pong">Sears Telegames Pong</label></li>
+                        <li><label><input type="radio" name="thirdAnswer" value="Magnavox-Odyssey"></label>Magnavox Odyssey</li>
+                        <li><label><input type="radio" name="fourthAnswer" value="Coleco-Telstar">Coleco Telstar</label></li>
+                    </ul>
+                </div>
+                <div id="thirdQuestion">
+                    <h2>De los siguientes juegos, ¿cuales fueron nominados a GOTY 2018?</h2>
+                    <ul>
+                        <li><label><input type="checkbox" name="firstAnswer" value="Shadow-of-the-Tomb-Raider"></label>Shadow of the Tomb Raider</li>
+                        <li><label><input type="checkbox" name="secondAnswer" value="Read-Dead-Redemption-2">Read Dead Redemption 2</label></li>
+                        <li><label><input type="checkbox" name="thirdAnswer" value="Marvel's-Spider-Man">Marvel's Spider-Man</label></li>
+                        <li><label><input type="checkbox" name="fourthAnswer" value="Warframe">Warframe</label></li>
+                        <li><label><input type="checkbox" name="fitfhAnswer" value="Monter-Hunter:-World">Monter Hunter: World</label></li>
+                    </ul>
+                </div>
+                <div id="fourthQuestion">
+                    <h2>Elige el juego que ha tenido el pico de jugadores mas alto en 2018.</h2>
+                    <select name="mostPlayedGame">
+                        <option selected>CS:GO</option>
+                        <option>League of Legends</option>
+                        <option>PUBG</option>
+                        <option>Fortnite</option>
+                    </select>
+                </div>
+                <div id="fifthQuestion">
+                    <h2>¿Cuál de las siguientes consolas apareció en la "Quinta generación"?</h2>
+                    <ul>
+                        <li><label><input type="radio" name="firstAnswer" value="SegaMega-CD">Sega Mega-CD</label></li>
+                        <li><label><input type="radio" name="secondAnswer" value="SegaDreamcast">Sega Dreamcast</label></li>
+                        <li><label><input type="radio" name="thirdAnswer" value="AtariJaguar">Atari Jaguar</label></li>
+                        <li><label><input type="radio" name="fourthAnswer" value="NintendoGameCube">Nintendo GameCube</label></li>
+                    </ul>
+                </div>
+                <div id="sixthQuestion">
+                    <h2><label>¿Cuantos premios recibió Hollow Knight?<br><br>
+                        <input type="number" name="awards" min="0" max="5"></label></h2>
+                </div>
+                <div id="seventhQuestion">
+                    <h2>DayZ comenzó siendo un mod para otro título, ¿cuál?</h2>
+                    <ul>
+                        <li><label><input type="radio" name="firstAnswer" value="arma3">Arma 3</label></li>
+                        <li><label><input type="radio" name="secondAnswer" value="half-life">Half-Life 2</label></li>
+                        <li><label><input type="radio" name="thirdAnswer" value="dayDefeat">Day of Defeat</label></li>
+                        <li><label><input type="radio" name="fourthAnswer" value="arma2">Arma 2</label></li>
+                    </ul>
+                </div>
+                <div id="eigthQuestion">
+                    <h2>¿Cuándo saldrá Half-Life 3?</h2>
+                    <ul>
+                        <li><label><input type="radio" name="firstAnswer" value="freeman">En el cumpleaños de Gordon Freeman</label></li>
+                        <li><label><input type="radio" name="firstAnswer" value="portal"></label>Junto a Portal 3</li>
+                        <li><label><input type="radio" name="firstAnswer" value="gabenVago">Gabe Newell trabaja</label></li>
+                        <li><label><input type="radio" name="firstAnswer" value="nunca"></label>Nunca</li>
+                    </ul>
+                </div>
+                <div id="ninthQuestion">
+                    <h2>En el caso de que juegues videojuegos, ¿cual es tu plataforma favorita?</h2>
+                    <textarea name="favoriteConsole" cols="45" placeholder="Escribe aquí."></textarea>
+                </div>
+                <div id="tenthQuestion">
+                    <h2>¿Cuál es tu videojuego favorito?</h2>
+                    <textarea name="favoriteVideogame" cols="45" placeholder="Escribe aquí."></textarea>
+                </div>
+            </fieldset>
+            <p><input type="submit"> <input type="reset"></p>
+        </div>
+    </form>
+</body>
+</html>

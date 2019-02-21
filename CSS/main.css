@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+
+}
+#header {
+    margin-bottom: 7%;
+    margin-right: 10%;
+}
+#header img {
+    float: left;
+    width: 10%;
+    top: 0%;    
+}
+#bannerRight {
+    float: right;
+}
+#bannerLeft {
+    float: left;
+}
+#form ul {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1060px){
+    #bannerRight, #bannerLeft {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px){
+    #participant {
+        min-width: 367px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #header {
+        min-width: 367px;
+    }
+}
