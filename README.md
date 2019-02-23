@@ -1,5 +1,5 @@
 # Examen-Autocorregido
-Ejercicio para aprender JS y XML
+*Ejercicio para aprender JS y XML*
 
 >1. Crea una página web con 10 preguntas con, al menos, 5 tipos diferentes
 >de elementos de formulario.
