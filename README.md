@@ -10,8 +10,7 @@ responder (si hay) y las respuestas correctas.
 tienen que tener más de una respuesta correcta.
 
 Construye una aplicación web que presente un conjunto de preguntas a todo tipos de dispositivo
-de forma adecuada, elegante y que se pueda autocorregir de golpe (con
-un solo botón corregir).
+de forma adecuada, elegante y que se pueda autocorregir de golpe (corregir con un solo botón).
 
 Cosas que tiene que hacer la aplicación:
 
