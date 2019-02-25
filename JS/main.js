@@ -57,6 +57,7 @@ function imprimirRadioButton(i, xmlDoc) {
         input.type = "radio";
         input.name = "preg" + 1;
         document.getElementById("pregunta" + 1).appendChild(input);
-        
+        document.getElementById("pregunta" + i).appendChild(span);
+        document.getElementById("pregunta" + i).appendChild(document.createElement("br"));
     }
 }
