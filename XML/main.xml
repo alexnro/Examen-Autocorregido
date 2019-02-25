@@ -3,5 +3,13 @@
 <!DOCTYPE questions>
 
 <questions>
-    
+    <question>
+        <type>radio</type>
+        <title>¿En que año se lanzó el primer videojuego?</title>
+        <option>1958</option>
+        <option>1960</option>
+        <option>1896</option>
+        <option>1931</option>
+        <answer>0</answer>
+    </question>
 </questions>
