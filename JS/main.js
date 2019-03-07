@@ -9,7 +9,7 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 window.onload = function () {
 
    //CORREGIR al apretar el botón
-   formElement = document.getElementById('myform');
+   formElement = document.getElementById('form');
    formElement.onsubmit = function () {
       inicializar();
       if (comprobar()) {
