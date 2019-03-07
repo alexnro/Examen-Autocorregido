@@ -1,15 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE questions>
-
 <questions>
-    <question>
-        <type>radio</type>
+    <question id="pregunta_01">
+        <type>radiobutton</type>
         <title>¿En que año se lanzó el primer videojuego?</title>
         <option>1958</option>
         <option>1960</option>
         <option>1896</option>
         <option>1931</option>
         <answer>0</answer>
+    </question>
+    <question id="pregunta_02">
+        <type>radiobutton</type>
+        <title>¿Cuál fué la primera videoconsola en lanzarse al mercado?</title>
+        <option>Atari</option>
+        <option>Sears Telegames Pong</option>
+        <option>Magnavox Odyssey</option>
+        <option>Coleco Telstar</option>
+        <answer>2</answer>
+    </question>
+    <question id="pregunta_03">
+        <type>checkbox</type>
+        <title>De los siguientes juegos, ¿cuales fueron nominados a GOTY 2018?</title>
+        <option>Shadow of the Tomb Raider</option>
+        <option>Read Dead Redemption 2</option>
+        <option>Marvel's Spider-Man</option>
+        <option>Warframe</option>
+        <option>Monster Hunter: World</option>
+        <answer>0</answer>
+        <answer>2</answer>
+        <answer>4</answer>
+    </question>
+    <question id="pregunta_04">
+        <type>select</type>
+        <title>Elige el juego que ha tenido el pico de jugadores mas alto en 2018.</title>
+        <option>CS:GO</option>
+        <option>League of Legends</option>
+        <option>PUBG</option>
+        <option>Fortnite</option>
+        <answer>3</answer>
+    </question>
+    <question id="pregunta_05">
+        <type>radiobutton</type>
+        <title>¿Cuál de las siguientes consolas apareció en la "Quinta generación"?</title>
+        <option>Sega Mega-CD</option>
+        <option>Sega Dreamcast</option>
+        <option>Atari Jaguar</option>
+        <option>Nintendo GameCube</option>
+        <answer>2</answer>
+    </question>
+    <question id="pregunta_06">
+        <type>input</type>
+        <title>¿Cuantos premios recibió Hollow Knight?</title>
+        <answer>5</answer>
+    </question>
+    <question id="pregunta_07">
+        <type>radiobutton</type>
+        <title>DayZ comenzó siendo un mod para otro título, ¿cuál?</title>
+        <option>Arma 3</option>
+        <option>Half-Life 2</option>
+        <option>Day of Defeat</option>
+        <option>Arma 2</option>
+        <answer>0</answer>
+    </question>
+    <question id="pregunta_08">
+        <type>select</type>
+        <title>¿Cuándo saldrá Half-Life 3?</title>
+        <option>En el cumpleaños de Gordon Freeman</option>
+        <option>Junto a Portal 3</option>
+        <option>Gabe Newell trabaja</option>
+        <option>Nunca</option>
+        <answer>0</answer>
+        <answer>1</answer>
+        <answer>2</answer>
+        <answer>3</answer>
+    </question>
+    <question id="pregunta_09">
+        <type>textarea</type>
+        <title>En el caso de que juegues videojuegos, ¿cual es tu plataforma favorita?</title>
+        <answer></answer>
+    </question>
+    <question id="pregunta_10">
+        <type>textarea</type>
+        <title>¿Cuál es tu videojuego favorito?</title>
+        <answer></answer>
     </question>
 </questions>
