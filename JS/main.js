@@ -82,8 +82,11 @@ function corregirNumber() {
       nota += 1;
    }
    else {
-      if (s > numeroSecreto) darRespuestaHtml("P1: Te has pasado");
-      else darRespuestaHtml("P1: Te has quedado corto");
+      if (s > numeroSecreto) {
+         darRespuestaHtml("P1: Te has pasado");
+      } else {
+         darRespuestaHtml("P1: Te has quedado corto");
+      }
    }
 }
 
