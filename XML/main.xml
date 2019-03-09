@@ -48,7 +48,7 @@
         <answer>2</answer>
     </question>
     <question id="pregunta_06">
-        <type>input</type>
+        <type>text</type>
         <title>¿Cuantos premios recibió Hollow Knight?</title>
         <answer>5</answer>
     </question>
@@ -62,7 +62,7 @@
         <answer>0</answer>
     </question>
     <question id="pregunta_08">
-        <type>select</type>
+        <type>checkbox</type>
         <title>¿Cuándo saldrá Half-Life 3?</title>
         <option>En el cumpleaños de Gordon Freeman</option>
         <option>Junto a Portal 3</option>
