@@ -16,9 +16,9 @@
     <div id="header">
             <img src="images/logo.jpg" alt="logo">
         <h1>PREGUNTAS GENÉRICAS DE VIDEOJUEGOS</h1>
-    </div>    
+    </div>
 
-    <form action="*.php" method="POST">
+    <form method="POST">
         <div id="participant">
             <fieldset>
                 <div id="instructions">
@@ -37,16 +37,36 @@
                     <img src="images/bannerLeft.jpeg" alt="banner" height="1321">
                 </div>
             <fieldset>
-                <div id="firstQuestion"></div>
-                <div id="secondQuestion"></div>
-                <div id="thirdQuestion"></div>
-                <div id="fourthQuestion"></div>
-                <div id="fifthQuestion"></div>
-                <div id="sixthQuestion"></div>
-                <div id="seventhQuestion"></div>
-                <div id="eigthQuestion"></div>
-                <div id="ninthQuestion"></div>
-                <div id="tenthQuestion"></div>
+                <div id="firstQuestion">
+                    <input id="radio" type="radio">
+                </div>
+                <div id="secondQuestion">
+                    <input id="radio2" type="radio">
+                </div>
+                <div id="thirdQuestion">
+                    <input id="check" type="checkbox">
+                </div>
+                <div id="fourthQuestion">
+                    <select multiple id="select"></select>
+                </div>
+                <div id="fifthQuestion">
+                    <input id="radio3" type="radio">
+                </div>
+                <div id="sixthQuestion">
+                    <input id="number" type="number">
+                </div>
+                <div id="seventhQuestion">
+                    <input id="radio4" type="radio">
+                </div>
+                <div id="eigthQuestion">
+                    <select multiple id="select2"></select>
+                </div>
+                <div id="ninthQuestion">
+                    <textarea id="text" cols="45" placeholder="Escribe aquí."></textarea>
+                </div>
+                <div id="tenthQuestion">
+                    <textarea id="text2" cols="45" placeholder="Escribe aquí."></textarea>
+                </div>
             </fieldset>
             <p><input type="submit"> <input type="reset"></p>
         </div>
