@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,69 +9,104 @@
     <meta property="og:title" content="Examen">
     <meta property="og:image" content="images/logo.jpg">
     <meta property="og:description" content="Examen autocorregido sobre videojuegos">
-    <link rel="icon" type="image/png" href="images/logo.jpg"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css"/>
+    <link rel="icon" type="image/png" href="images/logo.jpg" />
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
     <script src="JS/main.js"></script>
 </head>
+
 <body>
     <div id="header">
-            <img src="images/logo.jpg" alt="logo">
+        <img src="images/logo.jpg" alt="logo">
         <h1>PREGUNTAS GENÉRICAS DE VIDEOJUEGOS</h1>
     </div>
 
-    <form method="POST">
-        <div id="participant">
-            <fieldset>
-                <div id="instructions">
-                    <h2>INSTRUCCIONES</h2>
-                    <p>Responde correctamente a las siguientes preguntas, las preguntas de selección múltiple tienen mas de una respuesta correcta.</p>
-                </div>
-                <p>Nombre: <input type="text" name="name"></p>
-                <p>DNI: <input type="text" name="dni"></p>
-            </fieldset>
-        </div>
-        <div id="form">
-                <div id="bannerRight">
-                    <img src="images/banner.jpeg" alt="banner" height="1321">
-                </div>
-                <div id="bannerLeft">
-                    <img src="images/bannerLeft.jpeg" alt="banner" height="1321">
-                </div>
-            <fieldset>
-                <div id="firstQuestion">
-                    <input id="radio" type="radio">
-                </div>
-                <div id="secondQuestion">
-                    <input id="radio2" type="radio">
-                </div>
-                <div id="thirdQuestion">
-                    <input id="check" type="checkbox">
-                </div>
-                <div id="fourthQuestion">
-                    <select multiple id="select"></select>
-                </div>
-                <div id="fifthQuestion">
-                    <input id="radio3" type="radio">
-                </div>
-                <div id="sixthQuestion">
-                    <input id="number" type="number">
-                </div>
-                <div id="seventhQuestion">
-                    <input id="radio4" type="radio">
-                </div>
-                <div id="eigthQuestion">
-                    <select multiple id="select2"></select>
-                </div>
-                <div id="ninthQuestion">
-                    <textarea id="text" cols="45" placeholder="Escribe aquí."></textarea>
-                </div>
-                <div id="tenthQuestion">
-                    <textarea id="text2" cols="45" placeholder="Escribe aquí."></textarea>
-                </div>
-            </fieldset>
-            <p><input type="submit"> <input type="reset"></p>
-        </div>
+    <div id="participant">
+        <fieldset>
+            <div id="instructions">
+                <h2>INSTRUCCIONES</h2>
+                <p>Responde correctamente a las siguientes preguntas, las preguntas de selección múltiple tienen mas de
+                    una respuesta correcta.</p>
+            </div>
+        </fieldset>
+    </div>
+
+    <form id='myform'>
+        <fieldset>
+            <h3 id='tituloInput'>Numero</h3>
+            <input id='num' type='number'>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <h3 id='tituloSelect'>Seleccion</h3>
+            <select multiple id='sel'>
+            </select>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <h3 id='tituloCheckbox'>Opciones</h3>
+            <div id='checkboxDiv'>
+            </div>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <h3 id='tituloRadioButton'>Elegir</h3>
+            <div id='radioButtonDiv'>
+            </div>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <h3 id='tituloSelect2'>Seleccion1</h3>
+            <select id='sel2'>
+                <option selected value="-1">Selecciona una...</option>
+            </select>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <h3 id='tituloInput2'>Numero1</h3>
+            <input id='num2' type='number'>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <h3 id='tituloCheckbox2'>Opciones1</h3>
+            <div id='checkboxDiv2'>
+            </div>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <h3 id='tituloRadioButton2'>Elegir1</h3>
+            <div id='radioButtonDiv2'>
+            </div>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <h3 id='tituloCheckbox3'>Opciones2</h3>
+            <div id='checkboxDiv3'>
+            </div>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <h3 id='tituloInput3'>Numero2</h3>
+            <input id='num3' type='number'>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input id="corregir" type='submit' value='Corregir'>
+        <br>
+        <br>
     </form>
     <div id='resultadosDiv'></div>
+    <div id='resultadosDiv'></div>
 </body>
+
 </html>
