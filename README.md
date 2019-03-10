@@ -21,7 +21,7 @@ Cosas que tiene que hacer la aplicación:
 >3. Poder corregir solo si has completado todas las preguntas (usa el atributo
 >required y/u otros que tendrás que buscar)
 >4. Corregir y presentar una nota (opcionalmente se presentará qué opciones
->has contestado bien y qué mal).
->Otras propiedades opcionales:
->5. Tiempo máximo de realización del examen.
->6. Cualquier propuesta personal que se haga una vez todo funcione...
+>has contestado bien y qué mal).<br>
+>Otras propiedades opcionales:<br>
+>Tiempo máximo de realización del examen.<br>
+>Cualquier propuesta personal que se haga una vez todo funcione...
