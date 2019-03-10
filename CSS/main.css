@@ -21,6 +21,11 @@ body {
     list-style-type: none;
 }
 
+#resultadosDiv {
+    color: rgb(134, 28, 28);
+    background-color: rgba(54, 241, 54, 0.753);
+}
+
 @media screen and (max-width: 1060px){
     #bannerRight, #bannerLeft {
         display: none;
