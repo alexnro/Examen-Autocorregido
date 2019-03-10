@@ -31,15 +31,3 @@ body {
         display: none;
     }
 }
-
-@media screen and (max-width: 420px){
-    #participant {
-        min-width: 367px;
-    }
-}
-
-@media screen and (max-width: 380px){
-    #header {
-        min-width: 367px;
-    }
-}

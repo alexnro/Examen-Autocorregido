@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+
+}
+#header {
+    margin-bottom: 7%;
+    margin-right: 10%;
+}
+#header img {
+    float: left;
+    width: 10%;
+    top: 0%;    
+}
+
+#participant {
+    min-width: 367px;
+}
+
+#bannerRight, #bannerLeft {
+    display: none;
+}
+
+#form ul {
+    list-style-type: none;
+}
+
+#resultadosDiv {
+    color: rgb(134, 28, 28);
+    background-color: rgba(54, 241, 54, 0.753);
+}
+
+@media screen and (max-width: 380px){
+    #header {
+        min-width: 367px;
+    }
+}
