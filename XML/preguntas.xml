@@ -37,10 +37,10 @@
     <question id="pregunta_05">
         <type>select</type>
         <title>¿Cuándo saldrá Half-Life 3?</title>
-        <option>En el cumpleaños de Gordon Freeman</option>
+        <option>Nunca</option>
         <option>Junto a Portal 3</option>
         <option>Gabe Newell trabaja</option>
-        <option>Nunca</option>
+        <option>En el cumpleaños de Gordon Freeman</option>
         <answer>0</answer>
     </question>
     <question id="pregunta_06">

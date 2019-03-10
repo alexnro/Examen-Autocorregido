@@ -162,7 +162,7 @@ function corregirNumber() {
 function corregirNumber2() {
    //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
    //en este ejemplo hace una comparación de números enteros
-   var s = formElement.elements[17].value;
+   var s = formElement.elements[12].value;
    if (s == numeroSecreto2) {
       darRespuestaHtml("Pregunta 6: Correcto");
       nota += 1;
@@ -173,7 +173,7 @@ function corregirNumber2() {
 function corregirNumber3() {
    //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
    //en este ejemplo hace una comparación de números enteros
-   var s = formElement.elements[34].value;
+   var s = formElement.elements[25].value;
    if (s == numeroSecreto3) {
       darRespuestaHtml("Pregunta 10: Correcto");
       nota += 1;
@@ -193,7 +193,7 @@ function corregirSelect() {
 function corregirSelect2() {
    //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
 
-   var sel2 = formElement.elements[15];
+   var sel2 = formElement.elements[11];
    if (sel2.selectedIndex - 1 == respuestaSelect2) {
 
       darRespuestaHtml("Pregunta 5: Correcto");
