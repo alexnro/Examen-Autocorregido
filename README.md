@@ -1,6 +1,8 @@
 # Examen-Autocorregido
 *Ejercicio para aprender JS y XML*
 
+### NO FUNCIONA EN GOOGLE CHROME
+
 >1. Crea una página web con 10 preguntas con, al menos, 5 tipos diferentes
 >de elementos de formulario.
 >2. Crea un fichero XML que contenga el título de las preguntas, las opciones para
