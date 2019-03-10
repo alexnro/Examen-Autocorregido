@@ -18,12 +18,12 @@
     <question id="pregunta_03">
         <type>checkbox</type>
         <title>De los siguientes juegos, ¿cuales fueron nominados a GOTY 2018?</title>
-        <option>Hello Kitty</option>
-        <option>Read Dead Redemption 2</option>
         <option>Marvel's Spider-Man</option>
+        <option>Read Dead Redemption 2</option>
+        <option>Hello Kitty</option>
         <option>Monster Hunter: World</option>
-        <answer>2</answer>
-        <answer>4</answer>
+        <answer>0</answer>
+        <answer>1</answer>
     </question>
     <question id="pregunta_04">
         <type>radiobutton</type>

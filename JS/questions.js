@@ -16,7 +16,7 @@ var nota = 0;
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function () {
    //CORREGIR al apretar el botón
-   formElement = document.getElementById('myform');
+   formElement = document.getElementById("myform");
    formElement.onsubmit = function () {
       inicializar();
       if (comprobar()) {
@@ -66,9 +66,9 @@ function gestionarXml(dadesXml) {
    //Recuperamos el título y las opciones, guardamos la respuesta correcta
    var tituloSelect = xmlDoc.getElementsByTagName("title")[1].innerHTML;
    var opcionesSelect = [];
-   var nopt = xmlDoc.getElementById("pregunta_02").getElementsByTagName('option').length;
+   var nopt = xmlDoc.getElementById("pregunta_02").getElementsByTagName("option").length;
    for (i = 0; i < nopt; i++) {
-      opcionesSelect[i] = xmlDoc.getElementById("pregunta_02").getElementsByTagName('option')[i].innerHTML;
+      opcionesSelect[i] = xmlDoc.getElementById("pregunta_02").getElementsByTagName("option")[i].innerHTML;
    }
    ponerDatosSelectHtml(tituloSelect, opcionesSelect);
    respuestaSelect = parseInt(xmlDoc.getElementsByTagName("answer")[1].innerHTML);
@@ -76,9 +76,9 @@ function gestionarXml(dadesXml) {
    //Recuperamos el título y las opciones, guardamos la respuesta correcta
    var tituloSelect2 = xmlDoc.getElementsByTagName("title")[4].innerHTML;
    var opcionesSelect2 = [];
-   var nopt = xmlDoc.getElementById("pregunta_05").getElementsByTagName('option').length;
+   var nopt = xmlDoc.getElementById("pregunta_05").getElementsByTagName("option").length;
    for (i = 0; i < nopt; i++) {
-      opcionesSelect2[i] = xmlDoc.getElementById("pregunta_05").getElementsByTagName('option')[i].innerHTML;
+      opcionesSelect2[i] = xmlDoc.getElementById("pregunta_05").getElementsByTagName("option")[i].innerHTML;
    }
    ponerDatosSelect2Html(tituloSelect2, opcionesSelect2);
    respuestaSelect2 = parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
@@ -86,12 +86,12 @@ function gestionarXml(dadesXml) {
    //Recuperamos el título y las opciones, guardamos las respuestas correctas
    var tituloCheckbox = xmlDoc.getElementsByTagName("title")[2].innerHTML;
    var opcionesCheckbox = [];
-   var nopt = xmlDoc.getElementById("pregunta_03").getElementsByTagName('option').length;
+   var nopt = xmlDoc.getElementById("pregunta_03").getElementsByTagName("option").length;
    for (i = 0; i < nopt; i++) {
-      opcionesCheckbox[i] = xmlDoc.getElementById("pregunta_03").getElementsByTagName('option')[i].innerHTML;
+      opcionesCheckbox[i] = xmlDoc.getElementById("pregunta_03").getElementsByTagName("option")[i].innerHTML;
    }
    ponerDatosCheckboxHtml(tituloCheckbox, opcionesCheckbox);
-   var nres = xmlDoc.getElementById("pregunta_03").getElementsByTagName('answer').length;
+   var nres = xmlDoc.getElementById("pregunta_03").getElementsByTagName("answer").length;
    for (i = 0; i < nres; i++) {
       respuestasCheckbox[i] = xmlDoc.getElementById("pregunta_03").getElementsByTagName("answer")[i].innerHTML;
    }
@@ -99,12 +99,12 @@ function gestionarXml(dadesXml) {
    //Recuperamos el título y las opciones, guardamos las respuestas correctas
    var tituloCheckbox2 = xmlDoc.getElementsByTagName("title")[6].innerHTML;
    var opcionesCheckbox2 = [];
-   var nopt = xmlDoc.getElementById("pregunta_07").getElementsByTagName('option').length;
+   var nopt = xmlDoc.getElementById("pregunta_07").getElementsByTagName("option").length;
    for (i = 0; i < nopt; i++) {
-      opcionesCheckbox2[i] = xmlDoc.getElementById("pregunta_07").getElementsByTagName('option')[i].innerHTML;
+      opcionesCheckbox2[i] = xmlDoc.getElementById("pregunta_07").getElementsByTagName("option")[i].innerHTML;
    }
    ponerDatosCheckbox2Html(tituloCheckbox2, opcionesCheckbox2);
-   var nres = xmlDoc.getElementById("pregunta_07").getElementsByTagName('answer').length;
+   var nres = xmlDoc.getElementById("pregunta_07").getElementsByTagName("answer").length;
    for (i = 0; i < nres; i++) {
       respuestasCheckbox2[i] = xmlDoc.getElementById("pregunta_07").getElementsByTagName("answer")[i].innerHTML;
    }
@@ -112,36 +112,36 @@ function gestionarXml(dadesXml) {
    //Recuperamos el título y las opciones, guardamos las respuestas correctas
    var tituloCheckbox3 = xmlDoc.getElementsByTagName("title")[8].innerHTML;
    var opcionesCheckbox3 = [];
-   var nopt = xmlDoc.getElementById("pregunta_09").getElementsByTagName('option').length;
+   var nopt = xmlDoc.getElementById("pregunta_09").getElementsByTagName("option").length;
    for (i = 0; i < nopt; i++) {
-      opcionesCheckbox3[i] = xmlDoc.getElementById("pregunta_09").getElementsByTagName('option')[i].innerHTML;
+      opcionesCheckbox3[i] = xmlDoc.getElementById("pregunta_09").getElementsByTagName("option")[i].innerHTML;
    }
    ponerDatosCheckbox3Html(tituloCheckbox3, opcionesCheckbox3);
-   var nres = xmlDoc.getElementById("pregunta_09").getElementsByTagName('answer').length;
+   var nres = xmlDoc.getElementById("pregunta_09").getElementsByTagName("answer").length;
    for (i = 0; i < nres; i++) {
       respuestasCheckbox3[i] = xmlDoc.getElementById("pregunta_09").getElementsByTagName("answer")[i].innerHTML;
    }
    //Radio
    var tituloRadioButton = xmlDoc.getElementsByTagName("title")[3].innerHTML;
    var opcionesRadioButton = [];
-   var nopt = xmlDoc.getElementById("pregunta_04").getElementsByTagName('option').length;
+   var nopt = xmlDoc.getElementById("pregunta_04").getElementsByTagName("option").length;
    for (i = 0; i < nopt; i++) {
-      opcionesRadioButton[i] = xmlDoc.getElementById("pregunta_04").getElementsByTagName('option')[i].innerHTML;
+      opcionesRadioButton[i] = xmlDoc.getElementById("pregunta_04").getElementsByTagName("option")[i].innerHTML;
    }
    ponerDatosRadioButtonHtml(tituloRadioButton, opcionesRadioButton);
-   var nres = xmlDoc.getElementById("pregunta_04").getElementsByTagName('answer').length;
+   var nres = xmlDoc.getElementById("pregunta_04").getElementsByTagName("answer").length;
    for (i = 0; i < nres; i++) {
       respuestasRadioButton[i] = xmlDoc.getElementById("pregunta_04").getElementsByTagName("answer")[i].innerHTML;
    }
    //Radio
    var tituloRadioButton2 = xmlDoc.getElementsByTagName("title")[7].innerHTML;
    var opcionesRadioButton2 = [];
-   var nopt = xmlDoc.getElementById("pregunta_08").getElementsByTagName('option').length;
+   var nopt = xmlDoc.getElementById("pregunta_08").getElementsByTagName("option").length;
    for (i = 0; i < nopt; i++) {
-      opcionesRadioButton2[i] = xmlDoc.getElementById("pregunta_08").getElementsByTagName('option')[i].innerHTML;
+      opcionesRadioButton2[i] = xmlDoc.getElementById("pregunta_08").getElementsByTagName("option")[i].innerHTML;
    }
    ponerDatosRadioButton2Html(tituloRadioButton2, opcionesRadioButton2);
-   var nres = xmlDoc.getElementById("pregunta_08").getElementsByTagName('answer').length;
+   var nres = xmlDoc.getElementById("pregunta_08").getElementsByTagName("answer").length;
    for (i = 0; i < nres; i++) {
       respuestasRadioButton2[i] = xmlDoc.getElementById("pregunta_08").getElementsByTagName("answer")[i].innerHTML;
    }
@@ -153,10 +153,10 @@ function corregirNumber() {
    //en este ejemplo hace una comparación de números enteros
    var s = formElement.elements[1].value;
    if (s == numeroSecreto) {
-      darRespuestaHtml("Pregunta 1: Exacto!");
+      darRespuestaHtml("Pregunta 1: Correcto");
       nota += 1;
    } else {
-      if (s > numeroSecreto) darRespuestaHtml("Pregunta 1: Te has pasado"); else darRespuestaHtml("Pregunta 1: Te has quedado corto");
+      if (s > numeroSecreto) darRespuestaHtml("Pregunta 1: Incorrecto"); else darRespuestaHtml("Pregunta 1: Incorrecto");
    }
 }
 function corregirNumber2() {
@@ -164,10 +164,10 @@ function corregirNumber2() {
    //en este ejemplo hace una comparación de números enteros
    var s = formElement.elements[17].value;
    if (s == numeroSecreto2) {
-      darRespuestaHtml("Pregunta 6: Eso es!!");
+      darRespuestaHtml("Pregunta 6: Correcto");
       nota += 1;
    } else {
-      if (s > numeroSecreto2) darRespuestaHtml("P6: Te has pasadoo"); else darRespuestaHtml("Pregunta 6: Te has quedado cortoo");
+      if (s > numeroSecreto2) darRespuestaHtml("Pregunta 6: Incorrecto"); else darRespuestaHtml("Pregunta 6: Incorrecto");
    }
 }
 function corregirNumber3() {
@@ -175,10 +175,10 @@ function corregirNumber3() {
    //en este ejemplo hace una comparación de números enteros
    var s = formElement.elements[34].value;
    if (s == numeroSecreto3) {
-      darRespuestaHtml("Pregunta 10: Eso es!!");
+      darRespuestaHtml("Pregunta 10: Correcto");
       nota += 1;
    } else {
-      if (s > numeroSecreto3) darRespuestaHtml("Pregunta 10: Te has pasadoo"); else darRespuestaHtml("Pregunta 10: Te has quedado cortoo");
+      if (s > numeroSecreto3) darRespuestaHtml("Pregunta 10: Incorrecto"); else darRespuestaHtml("Pregunta 10: Correcto");
    }
 }
 function corregirSelect() {
@@ -231,7 +231,7 @@ function corregirCheckbox() {
          }
       }
    }
-   darRespuestaHtml("Pregunta 3: Correctas: (" + correctas + ") Incorrectas: (" + incorrectas + ") Puntuacion: " + notaPregunta);
+   darRespuestaHtml("Pregunta 3: Tienes " + correctas + " respuestas correctas y " + incorrectas + " respuestas incorrectas, la puntuación es " + notaPregunta);
 }
 function corregirCheckbox2() {
    //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
@@ -263,7 +263,7 @@ function corregirCheckbox2() {
          }
       }
    }
-   darRespuestaHtml("Pregunta 7: Correctas: (" + correctas + ") Incorrectas: (" + incorrectas + ") Puntuacion: " + notaPregunta);
+   darRespuestaHtml("Pregunta 7: Tienes " + correctas + " respuestas correctas y " + incorrectas + " respuestas incorrectas, la puntuación es " + notaPregunta);
 }
 function corregirCheckbox3() {
    //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
@@ -295,15 +295,15 @@ function corregirCheckbox3() {
          }
       }
    }
-   darRespuestaHtml("Pregunta 9: Correctas: (" + correctas + ") Incorrectas: (" + incorrectas + ") Puntuacion: " + notaPregunta);
+   darRespuestaHtml("Pregunta 9: Tienes " + correctas + " respuestas correctas y " + incorrectas + " respuestas incorrectas, la puntuación es " + notaPregunta);
 }
 function corregirRadioButton() {
    //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
    var f = formElement;
    var escorrecta = [];
-   for (i = 0; i < f.Monjon.length; i++) {
-      //"Monjon" es el nombre asignado a todos los radiobuton
-      if (f.Monjon[i].checked) {
+   for (i = 0; i < f.radioRes.length; i++) {
+      //"radioRes" es el nombre asignado a todos los radiobuton
+      if (f.radioRes[i].checked) {
          escorrecta[i] = false;
          for (j = 0; j < respuestasRadioButton.length; j++) {
             if (i == respuestasRadioButton[j]) escorrecta[i] = true;
@@ -312,7 +312,7 @@ function corregirRadioButton() {
          if (escorrecta[i]) {
             nota += 1.0 / respuestasRadioButton.length;
             //dividido por el número de respuestas correctas   
-            darRespuestaHtml("Pregunta 4: Correcta");
+            darRespuestaHtml("Pregunta 4: Correcto");
          } else {
             darRespuestaHtml("Pregunta 4: Incorrecto");
          }
@@ -323,9 +323,9 @@ function corregirRadioButton2() {
    //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
    var f = formElement;
    var escorrecta = [];
-   for (i = 0; i < f.Monjon1.length; i++) {
-      //"Monjon" es el nombre asignado a todos los radiobuton
-      if (f.Monjon1[i].checked) {
+   for (i = 0; i < f.radioRes1.length; i++) {
+      //"radioRes" es el nombre asignado a todos los radiobuton
+      if (f.radioRes1[i].checked) {
          escorrecta[i] = false;
          for (j = 0; j < respuestasRadioButton2.length; j++) {
             if (i == respuestasRadioButton2[j]) escorrecta[i] = true;
@@ -334,7 +334,7 @@ function corregirRadioButton2() {
          if (escorrecta[i]) {
             nota += 1.0 / respuestasRadioButton2.length;
             //dividido por el número de respuestas correctas   
-            darRespuestaHtml("Pregunta 8: Correcta");
+            darRespuestaHtml("Pregunta 8: Correcto");
          } else {
             darRespuestaHtml("Pregunta 8: Incorrecto");
          }
@@ -373,8 +373,8 @@ function ponerDatosSelect2Html(t, opt) {
    }
 }
 function ponerDatosCheckboxHtml(t, opt) {
-   var checkboxContainer = document.getElementById('checkboxDiv');
-   document.getElementById('tituloCheckbox').innerHTML = t;
+   var checkboxContainer = document.getElementById("checkboxDiv");
+   document.getElementById("tituloCheckbox").innerHTML = t;
    for (i = 0; i < opt.length; i++) {
       var input = document.createElement("input");
       var label = document.createElement("label");
@@ -390,8 +390,8 @@ function ponerDatosCheckboxHtml(t, opt) {
    }
 }
 function ponerDatosCheckbox2Html(t, opt) {
-   var checkbox2Container = document.getElementById('checkboxDiv2');
-   document.getElementById('tituloCheckbox2').innerHTML = t;
+   var checkbox2Container = document.getElementById("checkboxDiv2");
+   document.getElementById("tituloCheckbox2").innerHTML = t;
    for (i = 0; i < opt.length; i++) {
       var input = document.createElement("input");
       var label = document.createElement("label");
@@ -407,8 +407,8 @@ function ponerDatosCheckbox2Html(t, opt) {
    }
 }
 function ponerDatosCheckbox3Html(t, opt) {
-   var checkbox3Container = document.getElementById('checkboxDiv3');
-   document.getElementById('tituloCheckbox3').innerHTML = t;
+   var checkbox3Container = document.getElementById("checkboxDiv3");
+   document.getElementById("tituloCheckbox3").innerHTML = t;
    for (i = 0; i < opt.length; i++) {
       var input = document.createElement("input");
       var label = document.createElement("label");
@@ -424,16 +424,16 @@ function ponerDatosCheckbox3Html(t, opt) {
    }
 }
 function ponerDatosRadioButtonHtml(t, opt) {
-   var RadioButtonContainer = document.getElementById('radioButtonDiv');
-   document.getElementById('tituloRadioButton').innerHTML = t;
+   var RadioButtonContainer = document.getElementById("radioButtonDiv");
+   document.getElementById("tituloRadioButton").innerHTML = t;
    for (i = 0; i < opt.length; i++) {
       var input = document.createElement("input");
       var label = document.createElement("label");
       label.innerHTML = opt[i];
-      label.setAttribute("for", "Monjon" + i);
+      label.setAttribute("for", "radioRes" + i);
       input.type = "radio";
-      input.name = "Monjon";
-      input.id = "Monjon_" + i;
+      input.name = "radioRes";
+      input.id = "radioRes_" + i;
       ;
       RadioButtonContainer.appendChild(input);
       RadioButtonContainer.appendChild(label);
@@ -441,16 +441,16 @@ function ponerDatosRadioButtonHtml(t, opt) {
    }
 }
 function ponerDatosRadioButton2Html(t, opt) {
-   var RadioButton2Container = document.getElementById('radioButtonDiv2');
-   document.getElementById('tituloRadioButton2').innerHTML = t;
+   var RadioButton2Container = document.getElementById("radioButtonDiv2");
+   document.getElementById("tituloRadioButton2").innerHTML = t;
    for (i = 0; i < opt.length; i++) {
       var input = document.createElement("input");
       var label = document.createElement("label");
       label.innerHTML = opt[i];
-      label.setAttribute("for", "Monjon1" + i);
+      label.setAttribute("for", "radioRes1" + i);
       input.type = "radio";
-      input.name = "Monjon1";
-      input.id = "Monjon1_" + i;
+      input.name = "radioRes1";
+      input.id = "radioRes1_" + i;
       ;
       RadioButton2Container.appendChild(input);
       RadioButton2Container.appendChild(label);
@@ -463,13 +463,13 @@ function darRespuestaHtml(r) {
    var p = document.createElement("p");
    var node = document.createTextNode(r);
    p.appendChild(node);
-   document.getElementById('resultadosDiv').appendChild(p);
+   document.getElementById("resultadosDiv").appendChild(p);
 }
 function presentarNota() {
-   darRespuestaHtml("Nota: " + nota + " Puntos sobre 10");
+   darRespuestaHtml("Tu nota es un " + nota + " sobre 10");
 }
 function inicializar() {
-   document.getElementById('resultadosDiv').innerHTML = "";
+   document.getElementById("resultadosDiv").innerHTML = "";
    nota = 0.0;
 }
 //Comprobar que se han introducido datos en el formulario
@@ -492,11 +492,11 @@ function comprobar() {
       //"color" es el nombre asignado a todos los checkbox
       if (f.color2[i].checked) checkedCheckbox3 = true;
    }
-   for (i = 0; i < f.Monjon.length; i++) {
-      if (f.Monjon[i].checked) checkedRadioButton = true;
+   for (i = 0; i < f.radioRes.length; i++) {
+      if (f.radioRes[i].checked) checkedRadioButton = true;
    }
-   for (i = 0; i < f.Monjon1.length; i++) {
-      if (f.Monjon1[i].checked) checkedRadioButton2 = true;
+   for (i = 0; i < f.radioRes1.length; i++) {
+      if (f.radioRes1[i].checked) checkedRadioButton2 = true;
    }
    if (f.elements[0].value == "") {
       f.elements[0].focus();
