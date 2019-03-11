@@ -13,7 +13,6 @@
         <option>PUBG</option>
         <option>Fortnite</option>
         <answer>3</answer>
-		
     </question>
     <question id="pregunta_03">
         <type>checkbox</type>
@@ -75,8 +74,7 @@
         <option>Apex Legends</option>
         <option>Darwin Project</option>
         <answer>1</answer>
-		<answer>2</answer>
-        
+        <answer>2</answer>
     </question>
     <question id="pregunta_10">
         <type>text</type>
