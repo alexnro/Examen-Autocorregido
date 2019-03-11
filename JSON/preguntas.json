@@ -1,0 +1,96 @@
+{
+    "questions": {
+        "question": [
+            {
+                "type": "text",
+                "title": "¿Cuantos premios recibió Hollow Knight?",
+                "answer": "5"
+            },
+            {
+                "type": "select",
+                "title": "Elige el juego que ha tenido el pico de jugadores mas alto en 2018.",
+                "option": [
+                    "CS:GO",
+                    "League of Legends",
+                    "PUBG",
+                    "Fortnite"
+                ],
+                "answer": "3"
+            },
+            {
+                "type": "checkbox",
+                "title": "De los siguientes juegos, ¿cuales fueron nominados a GOTY 2018?",
+                "option": [
+                    "Marvel's Spider-Man",
+                    "Read Dead Redemption",
+                    "Hello Kitty",
+                    "Monster Hunter: World"
+                ],
+                "answer": [
+                    "0",
+                    "1"
+                ]
+            },
+            {
+                "type": "radiobutton",
+                "title": "¿En que año se lanzó el primer videojuego?",
+                "option": [
+                    "1958",
+                    "1960",
+                    "1896",
+                    "1931"
+                ],
+                "answer": "0"
+            },
+            {
+                "type": "text",
+                "title": "¿En que año se lanzó la GameCube?",
+                "answer": "2001"
+            },
+            {
+                "type": "checkbox",
+                "title": "¿Cuál de las siguientes consolas apareció en la 'Quinta generación'?",
+                "option": [
+                    "Nintendo 64",
+                    "Sega Dreamcast",
+                    "Atari Jaguar",
+                    "Nintendo GameCube"
+                ],
+                "answer": [
+                    "0",
+                    "2"
+                ]
+            },
+            {
+                "type": "radiobutton",
+                "title": "¿Cuál fué la primera videoconsola en lanzarse al mercado?",
+                "option": [
+                    "Atari",
+                    "Sears Telegames Pong",
+                    "Magnavox Odyssey",
+                    "Coleco Telstar"
+                ],
+                "answer": "2"
+            },
+            {
+                "type": "checkbox",
+                "title": "¿Cuales son los dos battle royale más jugados de 2019?",
+                "option": [
+                    "PUBG",
+                    "Fortnite",
+                    "Apex Legends",
+                    "Darwin Project"
+                ],
+                "answer": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "type": "text",
+                "title": "¿Para cuantas consolas han salido juegos de Kingdom Hearts?",
+                "answer": "9"
+            }
+        ]
+    }
+}
