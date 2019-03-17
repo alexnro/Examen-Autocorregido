@@ -183,8 +183,8 @@ function corregirNumber3() {
 }
 function corregirSelect() {
    //Compara el índice seleccionado con el valor del índice que hay en el xml (<answer>2</answer>)
-   var sel = formElement.elements[3];
-   if (sel.selectedIndex - 1 == respuestaSelect) {
+   var sel = formElement.elements[2];
+   if (sel.selectedIndex == respuestaSelect) {
 
       darRespuestaHtml("Pregunta 2: Correcto");
       nota += 1;
